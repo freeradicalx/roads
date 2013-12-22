@@ -8,5 +8,17 @@ Development on this mod was begun in 1.5.2 and was ported to 1.6.4 and tested fo
 
 To add to your mod: Add /freeradicalx/roads and freeradicalx/util to /mcp/src/minecraft.
 
+Some explanation of the code:
+
+/roads/WorldGenRoads.java: The actual world generator that rolls for a new road and checks for nearby roads to link to. Does all the heavy lifting of figuring out what road segments will be drawn where.
+
+/roads/RoadData.java: Uses NBTTagCompounds to store lists of chunks that have roads in them and keeps track of road coordinates and road IDs (Roads have floating point numbers as identifiers so a road doesn’t, for example, loop back into itself)
+
+/roads/Roads.java: Hook file required by FML
+
+/roads/lib/Reference.java: Stores version info on the mod
+
+/util/ExtraUtils.java: A toolbox. Stores various trigonometric methods used to draw the roads and methods used to determine proper ground height to build the roads on.
+
 -freeradicalx
 nathanscottrosenquist at gmail dot com

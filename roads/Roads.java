@@ -36,6 +36,7 @@ public class Roads {
 	@Init
 	public void Init(FMLInitializationEvent event){
 		
+		/*
 		GameRegistry.removeBiome(BiomeGenBase.iceMountains);
 		GameRegistry.removeBiome(BiomeGenBase.extremeHillsEdge);
 		GameRegistry.removeBiome(BiomeGenBase.extremeHills);
@@ -46,6 +47,7 @@ public class Roads {
 		GameRegistry.removeBiome(BiomeGenBase.jungleHills);
 		GameRegistry.removeBiome(BiomeGenBase.swampland);
 		GameRegistry.removeBiome(BiomeGenBase.icePlains);;
+		*/
 		
 	}
 	
